@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>성향미 | 웰니스 교육·아로마·명상테라피</title>
-  <meta name="description" content="몸과 마음의 균형을 돕는 웰니스 교육, 아로마테라피, 명상테라피, 뉴로아로마 프로그램을 소개합니다." />
+  <title>성향미 | 웰니스 교육 · 아로마테라피 · 명상테라피</title>
+  <meta name="description" content="지금 내게 필요한 회복을 만나는 웰니스 클래스. 성향미의 실제 수업을 바탕으로 구성한 아로마테라피, 명상테라피, 뉴로아로마, 웰니스 교육 프로그램 안내" />
   <style>
     :root {
-      --bg: #f6f3ee;
-      --paper: #fffdf9;
-      --text: #2e2a26;
-      --muted: #6f665f;
-      --point: #7a9d7d;
-      --point-dark: #557558;
-      --line: #e8dfd3;
-      --shadow: 0 12px 40px rgba(56, 43, 28, 0.08);
+      --bg: #f7f4fb;
+      --paper: #ffffff;
+      --soft: #f3eef9;
+      --text: #2f2a33;
+      --muted: #6f6677;
+      --point: #8c79b5;
+      --point-dark: #6d5a96;
+      --line: #e9e0f2;
+      --shadow: 0 14px 40px rgba(77, 54, 113, 0.08);
       --radius: 22px;
-      --max: 1140px;
+      --max: 1160px;
     }
 
     * { box-sizing: border-box; }
@@ -24,7 +25,7 @@
     body {
       margin: 0;
       font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
-      background: linear-gradient(180deg, #f7f4ef 0%, #f4efe8 100%);
+      background: linear-gradient(180deg, #faf7fd 0%, #f5f0fa 100%);
       color: var(--text);
       line-height: 1.7;
     }
@@ -41,8 +42,8 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(14px);
-      background: rgba(255, 253, 249, 0.8);
-      border-bottom: 1px solid rgba(122, 157, 125, 0.12);
+      background: rgba(255, 255, 255, 0.82);
+      border-bottom: 1px solid rgba(140, 121, 181, 0.12);
     }
 
     .topbar-inner {
@@ -55,7 +56,7 @@
     .brand {
       font-weight: 800;
       letter-spacing: -0.04em;
-      font-size: 1.05rem;
+      font-size: 1.08rem;
     }
 
     .brand small {
@@ -74,18 +75,18 @@
 
     nav a {
       color: var(--muted);
-      font-size: 0.96rem;
+      font-size: 0.95rem;
       font-weight: 600;
     }
 
     .hero {
-      padding: 72px 0 42px;
+      padding: 76px 0 38px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 24px;
       align-items: stretch;
     }
 
@@ -97,19 +98,18 @@
     }
 
     .hero-main {
-      padding: 44px;
+      padding: 42px;
       background:
-        radial-gradient(circle at top right, rgba(122,157,125,0.18), transparent 32%),
-        radial-gradient(circle at left bottom, rgba(216,183,138,0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(140,121,181,0.14), transparent 32%),
+        radial-gradient(circle at left bottom, rgba(191,170,224,0.14), transparent 28%),
         var(--paper);
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       padding: 8px 14px;
-      background: rgba(122, 157, 125, 0.1);
+      background: rgba(140, 121, 181, 0.1);
       border-radius: 999px;
       color: var(--point-dark);
       font-size: 0.88rem;
@@ -117,26 +117,26 @@
       margin-bottom: 18px;
     }
 
-    h1, h2, h3 { margin: 0; letter-spacing: -0.04em; }
+    h1, h2, h3, h4 { margin: 0; letter-spacing: -0.04em; }
 
     h1 {
-      font-size: clamp(2.2rem, 4vw, 4rem);
-      line-height: 1.08;
+      font-size: clamp(2.15rem, 4vw, 4rem);
+      line-height: 1.1;
       margin-bottom: 18px;
     }
 
     .hero-main p {
-      font-size: 1.08rem;
-      color: #534943;
-      max-width: 700px;
+      font-size: 1.06rem;
+      color: #564d5f;
       margin: 0 0 24px;
+      max-width: 680px;
     }
 
     .hero-cta {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
-      margin-top: 28px;
+      margin-top: 26px;
     }
 
     .btn {
@@ -153,18 +153,18 @@
 
     .btn:hover { transform: translateY(-1px); }
     .btn-primary { background: var(--point-dark); color: white; }
-    .btn-secondary { border-color: var(--line); color: var(--text); background: #fff; }
+    .btn-secondary { background: white; border-color: var(--line); }
 
     .hero-side {
-      padding: 32px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 18px;
+      gap: 16px;
     }
 
     .quote {
-      font-size: 1.14rem;
+      font-size: 1.12rem;
       font-weight: 700;
       line-height: 1.6;
     }
@@ -177,12 +177,12 @@
     .mini-item {
       padding: 14px 16px;
       border-radius: 16px;
-      background: #faf6f0;
-      border: 1px solid #eee3d4;
+      background: #faf7fd;
+      border: 1px solid #eee6f7;
     }
 
     .section {
-      padding: 28px 0;
+      padding: 30px 0;
     }
 
     .section-title {
@@ -204,26 +204,26 @@
     .pill {
       padding: 10px 14px;
       border-radius: 999px;
-      background: #f7f1e7;
-      border: 1px solid #ebdecb;
+      background: #f6f0fc;
+      border: 1px solid #eadff8;
       font-weight: 600;
-      color: #5a4d41;
+      color: #5d5076;
     }
 
-    .grid-3, .grid-2 {
+    .grid-2, .grid-3 {
       display: grid;
       gap: 18px;
     }
 
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
     .content-card {
       padding: 26px;
     }
 
     .content-card h3 {
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       margin-bottom: 10px;
     }
 
@@ -232,14 +232,14 @@
       color: var(--muted);
     }
 
-    .profile-list, .program-list {
+    .profile-list, .program-cards {
       display: grid;
       gap: 14px;
       margin-top: 18px;
       padding: 0;
     }
 
-    .profile-list li, .program-list li {
+    .profile-list li {
       list-style: none;
       padding: 16px 18px;
       background: var(--paper);
@@ -247,22 +247,39 @@
       border-radius: 16px;
     }
 
-    .program-list strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 1rem;
-    }
-
-    .muted {
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
     .highlight-box {
       padding: 26px;
-      background: linear-gradient(135deg, rgba(122,157,125,0.12), rgba(216,183,138,0.12));
+      background: linear-gradient(135deg, rgba(140,121,181,0.1), rgba(212,196,236,0.12));
       border-radius: 22px;
-      border: 1px solid #dfd8cd;
+      border: 1px solid #e6dbf3;
+    }
+
+    .program-card {
+      padding: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .program-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.16rem;
+    }
+
+    .program-card > p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .sublist {
+      margin: 0;
+      padding-left: 18px;
+      color: #5b5265;
+    }
+
+    .sublist li {
+      margin: 6px 0;
     }
 
     .contact-box {
@@ -276,15 +293,9 @@
       font-size: 0.92rem;
     }
 
-    .notice {
-      margin-top: 14px;
-      font-size: 0.88rem;
-      color: #86796d;
-    }
-
     @media (max-width: 980px) {
-      .hero-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
-      .hero-main, .hero-side, .content-card, .contact-box { padding: 24px; }
+      .hero-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero-main, .hero-side, .content-card, .program-card, .contact-box { padding: 24px; }
       .topbar-inner { align-items: flex-start; gap: 14px; flex-direction: column; }
       nav { justify-content: flex-start; }
     }
@@ -295,12 +306,12 @@
     <div class="wrap topbar-inner">
       <div class="brand">
         성향미
-        <small>웰니스 교육 · 아로마테라피 · 명상테라피</small>
+        <small>웰니스 교육 · 아로마테라피 · 명상테라피 · 뉴로아로마</small>
       </div>
       <nav>
         <a href="#about">소개</a>
         <a href="#expertise">전문 분야</a>
-        <a href="#programs">프로그램</a>
+        <a href="#classes">수업 안내</a>
         <a href="#contact">문의</a>
       </nav>
     </div>
@@ -310,35 +321,36 @@
     <section class="hero wrap">
       <div class="hero-grid">
         <article class="card hero-main">
-          <div class="eyebrow">브랜드 소개</div>
-          <h1>몸과 마음의 균형을 살피고<br />편안한 회복을 돕는 웰니스 교육</h1>
+          <div class="eyebrow">Class & Wellness Guide</div>
+          <h1>지금 내게 필요한 회복을 만나는<br />웰니스 클래스</h1>
           <p>
-            아로마, 명상, 운동, 식이개선, 팀빌딩까지 연결되는 프로그램으로,
-            개인과 조직이 지금 필요한 회복과 균형을 찾을 수 있도록 돕습니다.
-            어렵지 않고 편안한 방식으로, 일상에 바로 적용할 수 있는 웰니스 경험을 전합니다.
+            아로마테라피, 명상테라피, 뉴로아로마, 웰니스 교육까지,
+            실제로 진행하고 있는 수업을 바탕으로 편안하고 이해하기 쉽게 구성했습니다.
+            개인, 기관, 기업, 단체의 목적에 따라 맞춤형으로 진행할 수 있습니다.
           </p>
           <div class="pill-row">
-            <span class="pill">웰니스 교육</span>
             <span class="pill">아로마테라피</span>
             <span class="pill">명상테라피</span>
             <span class="pill">뉴로아로마</span>
+            <span class="pill">웰니스 교육</span>
             <span class="pill">운동·식이개선</span>
             <span class="pill">팀빌딩 워크숍</span>
+            <span class="pill">전문 자격과정</span>
           </div>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#contact">강의 문의하기</a>
-            <a class="btn btn-secondary" href="#programs">프로그램 보기</a>
+            <a class="btn btn-primary" href="#contact">수업 문의하기</a>
+            <a class="btn btn-secondary" href="#classes">수업 보기</a>
           </div>
         </article>
 
         <aside class="card hero-side">
           <div>
-            <div class="quote">“내 상태를 이해하고, 나에게 맞는 방식으로 몸과 마음을 편안하게 돌보는 시간.”</div>
+            <div class="quote">“어렵지 않게, 부담 없이, 지금 내게 맞는 회복을 만나는 시간.”</div>
           </div>
           <div class="mini-list">
             <div class="mini-item"><strong>대표</strong><br />테라피 교육협회 / 도테라 오일하우스 대표</div>
-            <div class="mini-item"><strong>진행 분야</strong><br />개인 맞춤 웰니스 · 기관 출강 · 기업 워크숍 · 전문 교육</div>
-            <div class="mini-item"><strong>키워드</strong><br />아로마테라피 · 명상테라피 · 뉴로아로마 · 마음 케어</div>
+            <div class="mini-item"><strong>진행 형태</strong><br />개인 프로그램 · 기관 출강 · 기업 워크숍 · 전문 교육</div>
+            <div class="mini-item"><strong>중심 키워드</strong><br />회복 · 이완 · 균형 · 향 · 명상 · 마음 케어</div>
           </div>
         </aside>
       </div>
@@ -347,23 +359,23 @@
     <section id="about" class="section wrap">
       <div class="section-title">
         <h2>이런 도움을 드립니다</h2>
-        <p>고객이 지금 필요한 회복, 이완, 균형, 소통에 맞춰 프로그램을 구성합니다.</p>
+        <p>지친 몸과 마음을 돌보고 싶을 때, 관계와 조직의 에너지를 회복하고 싶을 때 함께할 수 있습니다.</p>
       </div>
       <div class="grid-2">
         <div class="card content-card">
-          <h3>한눈에 보는 방향</h3>
+          <h3>수업의 방향</h3>
           <ul class="profile-list">
-            <li><strong>몸과 마음의 회복</strong> 지친 일상 속에서 편안한 이완과 균형을 돕습니다.</li>
-            <li><strong>이해하기 쉬운 진행</strong> 누구나 부담 없이 참여할 수 있도록 쉽고 따뜻하게 안내합니다.</li>
-            <li><strong>상황에 맞는 맞춤 구성</strong> 개인, 기관, 기업, 단체에 맞게 프로그램을 조정합니다.</li>
+            <li><strong>편안하게 참여할 수 있는 진행</strong><br />누구나 이해하기 쉽고 부담 없이 따라올 수 있도록 안내합니다.</li>
+            <li><strong>지금 필요한 회복 중심</strong><br />이완, 집중, 감정 정리, 스트레스 완화 등 현재 상태에 맞춰 구성합니다.</li>
+            <li><strong>대상에 맞는 맞춤형 구성</strong><br />개인, 기관, 기업, 단체에 맞게 프로그램 내용을 유연하게 조정합니다.</li>
           </ul>
         </div>
         <div class="highlight-box">
           <h3>브랜드 메시지</h3>
           <p>
-            성향미의 프로그램은 단순한 정보 전달보다, 직접 느끼고 회복하는 경험에 중심을 둡니다.
-            아로마와 명상, 움직임, 감정 케어를 함께 연결해 현재의 상태를 살피고,
-            일상 속에서 지속할 수 있는 편안한 웰니스 방법을 전합니다.
+            성향미의 수업은 지식을 많이 전달하는 방식보다,
+            몸과 마음이 실제로 편안해지고 일상에서 계속 이어갈 수 있는 경험을 만드는 데 중심을 둡니다.
+            향, 명상, 움직임, 감정 케어를 함께 연결해 회복과 균형을 돕습니다.
           </p>
         </div>
       </div>
@@ -372,82 +384,109 @@
     <section id="expertise" class="section wrap">
       <div class="section-title">
         <h2>전문 분야</h2>
-        <p>복잡한 설명보다, 실제로 도움이 되는 방식에 초점을 맞춘 프로그램입니다.</p>
+        <p>실제로 운영하고 있는 수업을 바탕으로, 이해하기 쉬운 방식으로 안내합니다.</p>
       </div>
       <div class="grid-3">
         <article class="card content-card">
           <h3>아로마테라피</h3>
-          <p>향을 통해 몸과 마음을 편안하게 돌보고, 일상에 적용할 수 있는 아로마 활용법을 안내합니다.</p>
+          <p>향을 통해 몸과 마음을 부드럽게 돌보고, 일상에서 활용할 수 있는 방법을 배울 수 있습니다.</p>
         </article>
         <article class="card content-card">
           <h3>명상테라피</h3>
-          <p>호흡, 향, 소리, 집중을 활용해 긴장을 완화하고 마음을 안정시키는 시간을 만듭니다.</p>
+          <p>호흡, 향, 소리, 집중을 활용해 마음을 가라앉히고 편안한 이완을 돕는 수업입니다.</p>
         </article>
         <article class="card content-card">
           <h3>뉴로아로마</h3>
-          <p>현재의 마음 상태를 더 섬세하게 살피고, 나에게 맞는 향과 회복 방식을 찾도록 돕는 프로그램입니다.</p>
+          <p>현재의 상태를 더 섬세하게 살피고, 나에게 맞는 향과 회복 방향을 찾도록 돕는 프로그램입니다.</p>
         </article>
       </div>
     </section>
 
-    <section id="programs" class="section wrap">
+    <section id="classes" class="section wrap">
       <div class="section-title">
-        <h2>대표 프로그램</h2>
-        <p>한눈에 이해하기 쉬운 구성으로, 목적에 따라 편안하게 선택할 수 있습니다.</p>
+        <h2>수업 안내</h2>
+        <p>실제로 진행 중인 수업을 중심으로 정리했습니다. 필요에 따라 단독 진행 또는 맞춤 구성도 가능합니다.</p>
       </div>
-      <div class="grid-2">
-        <ul class="program-list">
-          <li>
-            <strong>아로마테라피</strong>
-            <span class="muted">감정아로마, 아로마 허브티, 천연조향, 아로마 DIY, 아로마터치 등 향을 활용한 회복 프로그램</span>
-          </li>
-          <li>
-            <strong>명상테라피</strong>
-            <span class="muted">아로마명상, 싱잉볼명상, 불교향도명상 등 깊은 이완과 내면의 안정을 돕는 프로그램</span>
-          </li>
-          <li>
-            <strong>뉴로아로마</strong>
-            <span class="muted">현재의 상태를 살피고, 맞춤 아로마를 통해 편안한 균형과 회복을 돕는 프로그램</span>
-          </li>
-          <li>
-            <strong>웰니스 교육</strong>
-            <span class="muted">명상, 운동, 식이개선, 로푸드, 건강한 생활습관을 연결하는 통합형 교육</span>
-          </li>
-        </ul>
-        <ul class="program-list">
-          <li>
-            <strong>전문 자격과정</strong>
-            <span class="muted">아로마테라피 입문과정, 심화과정, 웰니스 전문기술교육 등 배움과 실무를 함께 돕는 과정</span>
-          </li>
-          <li>
-            <strong>기관·기업 워크숍</strong>
-            <span class="muted">스트레스 관리, 소통과 화합, 조직강화, 팀빌딩 등 현장에 맞춘 워크숍</span>
-          </li>
-          <li>
-            <strong>맞춤형 힐링 프로그램</strong>
-            <span class="muted">기관, 단체, 모임 성격에 맞춰 주제와 구성, 진행 방식을 유연하게 조정합니다.</span>
-          </li>
-          <li>
-            <strong>창업 및 컨설팅</strong>
-            <span class="muted">웰니스 교육과 아로마 분야의 프로그램 기획, 운영 방향, 확장 아이디어를 함께 설계합니다.</span>
-          </li>
-        </ul>
+      <div class="grid-2 program-cards">
+        <article class="program-card">
+          <h3>아로마테라피</h3>
+          <p>향을 활용해 감정과 일상을 돌보는 프로그램</p>
+          <ul class="sublist">
+            <li>감정아로마</li>
+            <li>아로마 허브티</li>
+            <li>천연조향</li>
+            <li>아로마 DIY</li>
+            <li>아로마터치</li>
+          </ul>
+        </article>
+
+        <article class="program-card">
+          <h3>명상테라피</h3>
+          <p>편안한 이완과 내면의 안정을 돕는 명상 프로그램</p>
+          <ul class="sublist">
+            <li>아로마명상</li>
+            <li>싱잉볼명상</li>
+            <li>불교향도명상</li>
+          </ul>
+        </article>
+
+        <article class="program-card">
+          <h3>뉴로아로마</h3>
+          <p>현재 상태를 살피고 나에게 맞는 향을 찾는 프로그램</p>
+          <ul class="sublist">
+            <li>뇌파 기반 마음 케어</li>
+            <li>맞춤 아로마 추천</li>
+            <li>이완·집중 밸런스 프로그램</li>
+          </ul>
+        </article>
+
+        <article class="program-card">
+          <h3>웰니스 교육</h3>
+          <p>생활 속 회복과 건강한 습관을 돕는 통합형 교육</p>
+          <ul class="sublist">
+            <li>명상과 마음 돌봄</li>
+            <li>운동·식이개선</li>
+            <li>로푸드 및 건강식이</li>
+            <li>힐링 라이프스타일 교육</li>
+          </ul>
+        </article>
+
+        <article class="program-card">
+          <h3>기관·기업 워크숍</h3>
+          <p>관계 회복과 조직 에너지 향상을 위한 프로그램</p>
+          <ul class="sublist">
+            <li>스트레스 관리</li>
+            <li>소통과 화합</li>
+            <li>팀빌딩 워크숍</li>
+            <li>맞춤형 조직 프로그램</li>
+          </ul>
+        </article>
+
+        <article class="program-card">
+          <h3>전문 자격과정</h3>
+          <p>배움과 실무를 함께 연결하는 교육 과정</p>
+          <ul class="sublist">
+            <li>아로마테라피 입문과정</li>
+            <li>전문가 심화과정</li>
+            <li>웰니스 전문기술교육</li>
+            <li>교육 및 창업 컨설팅</li>
+          </ul>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="section wrap">
       <div class="card contact-box">
-        <h2>강의·협업 문의</h2>
+        <h2>수업·출강 문의</h2>
         <p>
-          웰니스 교육, 아로마테라피, 명상테라피, 뉴로아로마, 기관·기업 워크숍 문의를 환영합니다.<br />
-          목적과 대상에 맞는 프로그램으로 편안하게 상담해드립니다.
+          개인 프로그램, 기관 출강, 기업 워크숍, 맞춤형 웰니스 수업 문의를 받고 있습니다.<br />
+          대상과 목적에 맞게 편안하게 상담해드립니다.
         </p>
         <div class="pill-row" style="justify-content:center; margin-top: 24px;">
           <span class="pill">전화 010-4561-5407</span>
           <span class="pill">이메일 gidal99@naver.com</span>
           <span class="pill">전국 출강 문의 가능</span>
         </div>
-        <div class="notice">※ 주민등록번호, 계좌번호, 상세 주소 등 민감정보는 공개용 페이지에서 제외했습니다.</div>
       </div>
     </section>
   </main>
