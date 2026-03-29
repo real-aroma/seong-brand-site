@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>성향미 | 웰니스 교육·힐링·아로마 브랜딩 홈페이지</title>
+  <meta name="description" content="웰니스, 힐링, 아로마, 팀빌딩, 명상, 운동, 식이개선, 건강·뷰티 전문 교육가 성향미의 브랜딩 홈페이지" />
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --paper: #fffdf9;
+      --text: #2e2a26;
+      --muted: #6f665f;
+      --point: #7a9d7d;
+      --point-dark: #557558;
+      --line: #e8dfd3;
+      --accent: #d8b78a;
+      --shadow: 0 12px 40px rgba(56, 43, 28, 0.08);
+      --radius: 22px;
+      --max: 1140px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+      background: linear-gradient(180deg, #f7f4ef 0%, #f4efe8 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 253, 249, 0.76);
+      border-bottom: 1px solid rgba(122, 157, 125, 0.12);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      font-size: 1.05rem;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 0.96rem;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 72px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      padding: 44px;
+      background:
+        radial-gradient(circle at top right, rgba(122,157,125,0.18), transparent 32%),
+        radial-gradient(circle at left bottom, rgba(216,183,138,0.16), transparent 28%),
+        var(--paper);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: rgba(122, 157, 125, 0.1);
+      border-radius: 999px;
+      color: var(--point-dark);
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 { margin: 0; letter-spacing: -0.04em; }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero-main p {
+      font-size: 1.08rem;
+      color: #534943;
+      max-width: 700px;
+      margin: 0 0 24px;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform .18s ease, background .18s ease, color .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--point-dark);
+      color: white;
+    }
+    .btn-secondary {
+      border-color: var(--line);
+      color: var(--text);
+      background: #fff;
+    }
+
+    .hero-side {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .quote {
+      font-size: 1.16rem;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .mini-item {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #faf6f0;
+      border: 1px solid #eee3d4;
+    }
+
+    .section {
+      padding: 28px 0;
+    }
+
+    .section-title {
+      margin-bottom: 18px;
+    }
+
+    .section-title p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #f7f1e7;
+      border: 1px solid #ebdecb;
+      font-weight: 600;
+      color: #5a4d41;
+    }
+
+    .grid-3, .grid-2 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .content-card {
+      padding: 26px;
+    }
+
+    .content-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .content-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .profile-list, .timeline, .license-list, .program-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .profile-list li, .license-list li, .program-list li {
+      list-style: none;
+      padding: 16px 18px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .timeline-item {
+      padding: 18px 20px;
+      border-left: 4px solid var(--point);
+      background: #fffdfa;
+      border-radius: 0 16px 16px 0;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-item strong,
+    .license-list strong,
+    .program-list strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .highlight-box {
+      padding: 26px;
+      background: linear-gradient(135deg, rgba(122,157,125,0.12), rgba(216,183,138,0.12));
+      border-radius: 22px;
+      border: 1px solid #dfd8cd;
+    }
+
+    .contact-box {
+      padding: 34px;
+      text-align: center;
+    }
+
+    footer {
+      padding: 40px 0 64px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .notice {
+      margin-top: 14px;
+      font-size: 0.88rem;
+      color: #86796d;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .hero-main, .hero-side, .content-card, .contact-box { padding: 24px; }
+      .topbar-inner { align-items: flex-start; gap: 14px; flex-direction: column; }
+      nav { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        성향미
+        <small>Wellness Educator · Aroma Therapist · Team Building Facilitator</small>
+      </div>
+      <nav>
+        <a href="#about">소개</a>
+        <a href="#expertise">전문분야</a>
+        <a href="#career">경력</a>
+        <a href="#programs">프로그램</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <article class="card hero-main">
+          <div class="eyebrow">브랜드 소개</div>
+          <h1>몸과 마음의 균형을 설계하는<br />웰니스 교육 전문가, 성향미</h1>
+          <p>
+            힐링, 아로마, 명상, 운동, 식이개선, 팀빌딩까지 연결하는 통합형 웰니스 교육을 제공합니다.
+            현장 중심의 따뜻한 진행과 전문성을 바탕으로 개인의 회복, 조직의 소통, 교육의 변화를 만듭니다.
+          </p>
+          <div class="pill-row">
+            <span class="pill">웰니스 교육</span>
+            <span class="pill">아로마테라피</span>
+            <span class="pill">명상 테라피</span>
+            <span class="pill">운동·식이개선</span>
+            <span class="pill">팀빌딩 워크숍</span>
+            <span class="pill">전문 자격과정</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">강의 문의하기</a>
+            <a class="btn btn-secondary" href="#programs">프로그램 보기</a>
+          </div>
+        </article>
+
+        <aside class="card hero-side">
+          <div>
+            <div class="quote">“웰니스는 지식이 아니라, 몸과 감정과 관계 속에서 실제로 경험되어야 합니다.”</div>
+          </div>
+          <div class="mini-list">
+            <div class="mini-item"><strong>대표</strong><br />리얼로푸드앤바디랩 · 테라피교육협회(주)</div>
+            <div class="mini-item"><strong>대표강사</strong><br />국제웰니스교육협회 · 국제아로마임상협회</div>
+            <div class="mini-item"><strong>키워드</strong><br />아로마 · 힐링 · 명상 · 운동 · 식이 · 조직활성화</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <div class="section-title">
+        <h2>브랜드 프로필</h2>
+        <p>웰니스 기반의 교육, 치유, 라이프스타일 코칭을 한 흐름으로 연결합니다.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card content-card">
+          <h3>한눈에 보는 소개</h3>
+          <ul class="profile-list">
+            <li><strong>이름</strong> 성향미 / Seong Hyang Mi</li>
+            <li><strong>전문영역</strong> 힐링, 아로마, 팀빌딩, 명상, 운동, 식이, 건강·뷰티, 웰니스 전문기술교육</li>
+            <li><strong>학력</strong> 경남대학교 사회복지·응용사회학 학사 / 인제대학교 사회복지 석사</li>
+            <li><strong>수상</strong> 2018 국회의원상(민홍철) 표창장 — 지역사회복지</li>
+          </ul>
+        </div>
+        <div class="highlight-box">
+          <h3>브랜드 메시지</h3>
+          <p>
+            성향미는 단순한 강사가 아니라, 사람들의 건강한 일상과 조직의 긍정적 변화를 이끄는 웰니스 파트너입니다.
+            교육 대상과 현장 목적에 맞춰 아로마, 명상, 움직임, 영양, 감정케어를 유기적으로 설계합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section wrap">
+      <div class="section-title">
+        <h2>전문 분야</h2>
+        <p>개인 힐링 프로그램부터 공공기관·기업 워크숍, 자격과정까지 폭넓게 운영합니다.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card content-card">
+          <h3>웰니스 & 힐링</h3>
+          <p>명상 테라피, 힐링 운동, 건강 식이개선, 로푸드 요리, 채식 베이킹 등 몸과 마음을 함께 다루는 교육.</p>
+        </article>
+        <article class="card content-card">
+          <h3>아로마 전문교육</h3>
+          <p>아로마테라피, 감정아로마, 아로마허브티, DIY, 천연조향, 아로마터치, 아로마명상 등 실습형 커리큘럼.</p>
+        </article>
+        <article class="card content-card">
+          <h3>조직 활성화 & 팀빌딩</h3>
+          <p>소통과 화합, 스트레스 관리, 조직강화 워크숍 등 관계 회복과 팀 에너지를 끌어올리는 프로그램.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="career" class="section wrap">
+      <div class="section-title">
+        <h2>주요 경력</h2>
+        <p>현장 경험과 교육 운영 경험을 바탕으로 신뢰도 높은 브랜딩을 구축해왔습니다.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>2017.11 ~ 현재 · 리얼로푸드앤바디랩 대표</strong>
+          <div class="muted">웰니스 교육, 식이개선, 힐링 프로그램 운영</div>
+        </div>
+        <div class="timeline-item">
+          <strong>2017.11 ~ 현재 · 국제웰니스교육협회 대표강사</strong>
+          <div class="muted">전문 교육 및 자격과정 운영</div>
+        </div>
+        <div class="timeline-item">
+          <strong>2019.05 ~ 현재 · 한국항노화협회 이사</strong>
+          <div class="muted">항노화·웰니스 분야 교육 활동</div>
+        </div>
+        <div class="timeline-item">
+          <strong>2019.08 ~ 현재 · 국제아로마임상협회 대표강사</strong>
+          <div class="muted">아로마테라피 전문 교육</div>
+        </div>
+        <div class="timeline-item">
+          <strong>2022.12 ~ 현재 · 테라피교육협회(주) 대표</strong>
+          <div class="muted">교육 기획, 브랜딩, 현장 강의 운영</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-title">
+        <h2>보유 자격</h2>
+        <p>웰니스, 상담, 스포츠, 미용, 아로마 분야를 아우르는 다학제 전문성.</p>
+      </div>
+      <ul class="license-list">
+        <li><strong>사회복지사 1급 / 요양보호사 1급</strong><span class="muted">보건복지부</span></li>
+        <li><strong>TA상담사</strong><span class="muted">한국교류분석상담학회</span></li>
+        <li><strong>RAW FOOD Certification</strong><span class="muted">Alissa Cohen</span></li>
+        <li><strong>천연아로마전문가 / 국제아로마테라피스트 NAHA Level 1,2</strong><span class="muted">국제웰니스교육협회 / Rosemont Aromatherapy Center</span></li>
+        <li><strong>생활스포츠지도사 / 브레인 요가지도사 / 운동영양지도사 / Gymstick 국제강사</strong><span class="muted">운동·웰니스 전문자격</span></li>
+        <li><strong>컬러퍼스널리티 애널러시스카운셀러 CPAC 1,2급 / 사회적경제전문인력 / 방과후미용지도사 / 미용사종합면허</strong><span class="muted">융합형 교육 역량</span></li>
+      </ul>
+    </section>
+
+    <section id="programs" class="section wrap">
+      <div class="section-title">
+        <h2>대표 프로그램</h2>
+        <p>교육 목적과 대상에 맞춰 맞춤형으로 운영 가능한 주요 강의 주제입니다.</p>
+      </div>
+      <div class="grid-2">
+        <ul class="program-list">
+          <li><strong>아로마테라피 입문·자격과정</strong><span class="muted">일반 성인, 전문가, 창업 준비자를 위한 이론+실습형 과정</span></li>
+          <li><strong>아로마 심리·감정 케어</strong><span class="muted">감정아로마, 아동 후각심리상담, MBTI 기반 관계 개선</span></li>
+          <li><strong>웰니스 라이프스타일 교육</strong><span class="muted">명상테라피, 로푸드 요리, 건강 식이개선, 힐링 운동 지도</span></li>
+          <li><strong>뷰티·테라피 융합 프로그램</strong><span class="muted">아로마 헤드스파, 아로마 스파, 천연조향, DIY 클래스</span></li>
+        </ul>
+        <ul class="program-list">
+          <li><strong>반려동물 연계 프로그램</strong><span class="muted">반려견 수제간식, 펫 홀리스틱, 반려견 아로마</span></li>
+          <li><strong>전문가 대상 적용 과정</strong><span class="muted">아로마필라테스, 아로마요가, 아로마싱잉볼 등 전문직 확장 교육</span></li>
+          <li><strong>기관·기업 워크숍</strong><span class="muted">스트레스 관리, 조직강화, 소통과 화합, 팀빌딩</span></li>
+          <li><strong>창업 및 컨설팅</strong><span class="muted">여성창업, 펫스토랑 창업, 웰니스 교육 비즈니스 설계</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-title">
+        <h2>주요 강의 실적</h2>
+        <p>공공기관, 대학, 센터, 협회 등 다양한 현장에서 웰니스 교육을 진행했습니다.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card content-card">
+          <h3>공공·기관</h3>
+          <p>경남복지정책연구원, 경남여성새로일하기센터, 경남광역자활센터, 문화체육관광부, 고성군 등</p>
+        </article>
+        <article class="card content-card">
+          <h3>대학·교육기관</h3>
+          <p>경남대학교, 경남대학교 평생교육원 등에서 명상, 운동지도, 식이개선, 웰니스 전문교육 운영</p>
+        </article>
+        <article class="card content-card">
+          <h3>민간·창업지원</h3>
+          <p>창원여성인력개발센터, 협회 및 교육기관과 함께 창업 컨설팅, 반려견 간식, 팀빌딩 프로그램 진행</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap">
+      <div class="card contact-box">
+        <h2>강의·협업 문의</h2>
+        <p>
+          웰니스 교육, 아로마테라피, 팀빌딩, 힐링 프로그램, 기관·기업 출강 문의를 환영합니다.<br />
+          아래 연락처로 편하게 문의 주세요.
+        </p>
+        <div class="pill-row" style="justify-content:center; margin-top: 24px;">
+          <span class="pill">전화 010-4561-5407</span>
+          <span class="pill">이메일 gidal99@naver.com</span>
+          <span class="pill">경남 창원 · 김해 기반</span>
+        </div>
+        <div class="notice">※ 주민등록번호, 계좌번호, 상세 자택 주소 등 민감정보는 공개용 페이지에서 제외했습니다.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 성향미. All Rights Reserved.<br />
+      브랜딩 홈페이지 초안 · Wellness Branding Website Draft
+    </div>
+  </footer>
+</body>
+</html>
